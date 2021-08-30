@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JStream : Screen Recorder</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            JStream : <span>Screen Recorder</span> <!-- The color for the header kinda sucks but it's a demo -->
+        </h1>
+    </div>
+    <div class="wrapper">
+        <div class='btns'>
+            <button class='btn' id='start'>Start</button>
+            <button class='btn' id='stop' disabled>Stop</button>
+        </div>
+        <div id="vid-wrapper">
+            <p id="video-init">START RECORDING TO SHOW STREAM</p>
+            <video id='video' height='400px' width="900px" autoplay></video>
+        </div>
+        <p id='status-msg'></p>
+        <button class="btn" id="download-btn"><a id='downlink'>Download</a></button>
+        <script src="static/app.js"></script>
+    </div>
+</body>
+</html>

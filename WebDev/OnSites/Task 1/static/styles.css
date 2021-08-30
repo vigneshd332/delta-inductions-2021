@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1488 560L0 560 L0 328.84Q42.07 250.91%2c 120 292.99Q165.29 266.28%2c 192 311.58Q239.08 286.66%2c 264 333.75Q283.88 281.63%2c 336 301.51Q423.52 269.03%2c 456 356.55Q525.52 306.08%2c 576 375.6Q590.04 269.64%2c 696 283.68Q737.89 253.57%2c 768 295.46Q820.03 275.49%2c 840 327.51Q852.69 268.2%2c 912 280.9Q947.73 244.63%2c 984 280.36Q1078.68 255.05%2c 1104 349.73Q1129.68 303.42%2c 1176 329.1Q1231.98 313.09%2c 1248 369.07Q1268.18 269.25%2c 1368 289.44Q1433.38 234.82%2c 1488 300.21z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 447.28Q35.89 363.17%2c 120 399.07Q141.7 348.77%2c 192 370.48Q258 316.48%2c 312 382.48Q378.6 377.08%2c 384 443.68Q407.55 347.23%2c 504 370.77Q532.93 327.7%2c 576 356.63Q667.3 327.94%2c 696 419.24Q766.76 370%2c 816 440.76Q857.02 361.78%2c 936 402.8Q947.93 342.73%2c 1008 354.66Q1073.38 300.05%2c 1128 365.43Q1225.75 343.19%2c 1248 440.94Q1278.91 351.86%2c 1368 382.77Q1418.61 313.38%2c 1488 363.98z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 453.46Q63.16 444.62%2c 72 507.78Q75.57 439.35%2c 144 442.92Q194.67 373.59%2c 264 424.25Q340.99 381.24%2c 384 458.23Q471.41 425.64%2c 504 513.06Q532.94 470%2c 576 498.93Q583.79 434.73%2c 648 442.52Q717.82 392.33%2c 768 462.15Q850.32 424.47%2c 888 506.79Q916.96 415.75%2c 1008 444.71Q1058.31 375.01%2c 1128 425.32Q1230.36 407.67%2c 1248 510.03Q1283.43 425.46%2c 1368 460.89Q1409.1 429.99%2c 1440 471.09Q1460.04 419.13%2c 1512 439.16z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 582.17Q-2.79 507.38%2c 72 504.59Q126.95 439.54%2c 192 494.49Q258.78 489.27%2c 264 556.05Q311.49 483.53%2c 384 531.02Q462 489.02%2c 504 567.02Q504.58 495.6%2c 576 496.18Q652.37 500.55%2c 648 576.92Q693.56 502.48%2c 768 548.04Q783.62 491.66%2c 840 507.28Q892.12 439.4%2c 960 491.52Q1019.5 479.01%2c 1032 538.51Q1106.08 492.59%2c 1152 566.67Q1203.94 498.62%2c 1272 550.56Q1322.64 529.2%2c 1344 579.85Q1363.13 478.98%2c 1464 498.11z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.heading{
+    color: #eaeaea;
+    padding: 8px;
+    background-color: #182f5d;
+    border-radius: 3px;
+    /* #25467d */
+}
+p {
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #dadada;
+}
+.container {
+    padding-top: 14vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.piano{
+    background-color: grey;
+    padding-right: 50px;
+    border-radius: 6px;
+}
+.keys{
+    display: flex;
+}
+.keyset{
+    display: flex;
+    position: relative;
+}
+.whitekey{
+    background-color: #dadada;
+    height: 180px;
+    width: 70px;
+    transition: background-color 50ms ease;
+    z-index: 0;
+    border: 1px solid #2a2a2a;
+    border-right: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.blackkey{
+    background-color: #000000;
+    height: 110px;
+    width: 55px;
+    position: absolute;
+    right: -35%;
+    transition: background-color 50ms ease;
+    z-index: 1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.whitekey:hover{
+    opacity: 80%;
+}
+.blackkey:hover{
+    background-color: #1d1d1d;
+}
+.whitekey:active{
+    opacity: 100%;
+    background-color: #9a9a9a;
+}
+.whitekey.playing{
+    opacity: 100%;
+    background-color: #9a9a9a;
+}
+.whitekey.marker{
+    background-color: #f73d3e;
+}
+.marker.playing{
+    background-color: #f71818;
+}
+.marker:active{
+    background-color: #f71818;
+}
+.blackkey:active{
+    opacity: 100%;
+    background-color: #3b3b3b;
+}
+.blackkey.playing{
+    opacity: 100%;
+    background-color: #3b3b3b;
+}
+.end{
+    border-right: 1px solid #2a2a2a;
+}

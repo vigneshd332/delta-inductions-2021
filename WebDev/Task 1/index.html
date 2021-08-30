@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Tile IT: Just Tile It</title>
+
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-zone">
+        <table class="container" id='container-1'>
+            <tr>
+                <td>
+                    <div>
+                        <canvas id="ans-tile" height='203' width="203" ></canvas>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="playercontainer">
+                        <div class="player-tile" id='player-tile'></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table class="container" id='container-2'>
+            <tr>
+                <td>
+                    <div>
+                        <canvas id="ans-tile2" height='203' width="203" ></canvas>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="playercontainer">
+                        <div class="player-tile" id='player-tile2'></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content" id='content'>
+              <div class="close-btn" onclick="togglePopupOn('popup-1')">&times;</div>
+              <h3><span id='playername'></span> WIN!!!</h3>
+              <p>Moves: <span id='moves'></span> Score: <span id='score'></span> Time: <span id='time'></span></p>
+              <img id='yoogif' src='assets/yoo.gif' alt="Insert Madlad dancing GIF here" title="KFC Time" height="55%" width="32%"/>
+            </div>
+        </div>
+        <div class="popup active" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content" id='content'>
+                <h3>Tile It: Just Tile it mf</h3>
+                <select id='player-mode'>
+                    <option>Single Player</option>
+                    <option>Multi Player</option>
+                </select>
+                <br/>
+              <button class="play-btn" onclick="togglePopupOn('popup-2')">Play</button>
+            </div>
+        </div>
+        <div style="padding-top: 20px;">
+            <button class='reset-btn' onclick="window.location.reload()">RESET</button>
+        </div>
+        <!--button onclick="togglePopupOn('popup-1')">Show Popup</button-->
+    <script src='static/game.js' type="text/javascript"></script>
+    </div>
+    </body>
+</html>
