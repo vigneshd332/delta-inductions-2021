@@ -1,0 +1,24 @@
+version: "2"
+services:
+    database:
+        build: .
+        restart: always
+        container_name: database
+        environment:
+          MYSQL_ROOT_PASSWORD: ''
+        ports:
+            - '6033:3306'
+        expose:
+            - '3306'
+        volumes:
+            - /var/lib/mysql:/var/lib/mysql
+    flaskapp:
+        build: ./flaskapp
+        restart: always
+        links: 
+            - 'database'
+        ports:
+            - "5000:80"
+        expose: 
+            - '5000'
+     

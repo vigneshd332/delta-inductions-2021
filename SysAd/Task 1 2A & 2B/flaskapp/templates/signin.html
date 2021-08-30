@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>AlphaQ: SignIn</title>
+    <link href="../static/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/myfavicon.ico" type="image/ico"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <table class='headertable'>
+                <tr>
+                    <td class='headertd'><h2><a href="http://localhost:5000/index"><img src="../static/logo.jpg" width="98px" height="42px">     AlphaQ Management System</a></h2></td>
+                    <td class='headertd htd2'><button class="logoutbutton"><a href='http://localhost:5000/logout'>Logout</a></button></td>
+                </tr>
+            </table>            
+        </div>
+        <p class="subheader">Welcome!</p>
+        <form action="/signin" method = "POST">
+            <p>Sign In</p>
+            <p>Username <input type = "text" name = "username" /></p>
+            <p>Password <input type = "password" name = "password" /></p>
+            <button type = "submit">Submit</button>
+        </form>
+    </div>    
+</body>
+</html>

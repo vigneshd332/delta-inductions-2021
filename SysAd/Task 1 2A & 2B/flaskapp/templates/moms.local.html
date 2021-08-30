@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>AlphaQ: MoMs</title>
+    <link href="../static/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/myfavicon.ico" type="image/ico"/>
+</head>
+<body>
+    <div class='container'>
+        <div class="header">
+            <table class='headertable'>
+                <tr>
+                    <td class='headertd'><h2><a href="http://localhost:5000/index"><img src="../static/logo.jpg" width="98px" height="42px">     AlphaQ Management System</a></h2></td>
+                    <td class='headertd htd2'><button class="logoutbutton"><a href='http://localhost:5000/logout'>Logout</a></button></td>
+                </tr>
+            </table>            
+        </div>
+        <p class="subheader">MoM DataBase</p>
+        <form action='/moms.local' method="POST">
+            <p>Filter By</p>
+            <p class="fields">Username <input type="text" name="username"></input></p>
+            <p class="fields">Date(YYYY-MM-DD) <input type="text" name="date"></input></p>
+            <button type="submit">Filter</button>
+        </form>
+        <div class='tablecontainer'>
+            <table class="momtable"> 
+                <thead> 
+                <tr> 
+                    <th>Date</th> 
+                    <th>Author</th>
+                    <th>Content</th>
+                </tr> 
+                </thead> 
+                <tbody> 
+                    {% for row in table %}  
+                        <tr> 
+                            <td>{{row[0]}}</td> 
+                            <td>{{row[1]}}</td>
+                            <td>{{row[2]}}</td> 
+                        </tr> 
+                    {% endfor %} 
+                </tbody> 
+            </table> 
+        </div>
+    </div>    
+</body>
+</html>
