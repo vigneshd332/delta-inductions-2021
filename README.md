@@ -1,6 +1,6 @@
 # Delta Inductions 2021 : Master Repository
-This repo contains all my submissions for Delta's Inductions of 2021
-Navigate to the folder to view detailed READMEs
+This repo contains all my submissions for Delta's Inductions of 2021 (minus the Hackathon and Project)
+Navigate to each Task's sub-folders to view their detailed READMEs
 
 ## Tasks Included :
 ### WebDev
