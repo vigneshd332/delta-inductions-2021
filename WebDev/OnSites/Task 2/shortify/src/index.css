@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navheader{
+  background-color: #2d2d2d;
+  padding: 6px;
+}
+.navheader a{
+  text-decoration: none;
+  color: #eaeaea;
+  padding-left: 4px;
+}
+.wrapper {
+  padding-top: 10vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+.table-wrapper{
+  padding: 1px;
+  box-sizing: border-box;
+  max-width: 700px;
+}
+.table{
+  width: 80vw;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  margin-left: 20%; 
+  margin-right: 20%;
+}
+.table td, .table th{
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  font-size: 17px;
+}
+.table td{
+  word-break: break-all;
+}
+.table th{
+  word-break: normal;
+}
+#delete-td{
+  background-color: #ffffff;
+  border: none;
+}
+.table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.form{
+  margin: 20px;
+  padding: 0px;
+  display: block;
+}
+.form input{
+  padding: 7px 12px;
+}
+.navlink{
+  text-decoration: none;
+  color: #ffffff;
+}
+.error-message{
+  padding: 0%;
+  font-size: 14px;
+  color: #f63839;
+  opacity: 80%;
+}
+.btn-wrapper{
+  padding-top: 4px;
+}
+.btn-view{
+  background-color: #0e912e;
+  padding: 8px;
+  font: inherit;
+	cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.btn-view:hover{
+  background-color: #00b526;
+}
+.btn-view:active{
+  background-color: #00b526;
+  outline: 2px ridge #40a0ed;
+  box-shadow:  0 0 6px 0 rgba(62, 163, 221, 0.87);
+}
+.shortlink{
+  color: rgba(40, 124, 172, 0.966);
+}
+.btn-delete:hover{
+  opacity: 0.85;
+}
+.btn-delete:active{
+  background-color: #c74730;
+  border-radius: 8px;
+}
+@media screen and (max-width: 760px){
+  .table{
+    margin: auto;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .table td, .table th{
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+  .wrapper{
+    padding-top: 6vh;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn-view{
+    padding: 5px;
+  }
+  .navheader{
+    font-size: 14px;
+  }
+}
